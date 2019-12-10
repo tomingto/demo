@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserMapper extends tk.mybatis.mapper.common.Mapper<User> {
 
+    //....注释
     @Select("select * from user where id = #{Id}")
     User SelectUserById(Integer Id);
+
 }
